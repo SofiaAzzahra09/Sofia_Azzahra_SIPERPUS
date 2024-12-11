@@ -35,6 +35,6 @@ class BooksExport implements FromArray, WithHeadings
             'penerbit',
             'tahun',
             'rak'
-        ]
+        ];
     }
 }

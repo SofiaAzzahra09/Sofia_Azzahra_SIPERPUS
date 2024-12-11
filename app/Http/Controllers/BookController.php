@@ -7,7 +7,7 @@ use App\Models\Book;
 use App\Models\Bookshelf;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Excel;
+use Maatwebsite\Excel\Facades\Excel;
 use Storage;
 
 class BookController extends Controller
