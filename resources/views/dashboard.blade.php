@@ -10,6 +10,17 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
+
+                    @auth
+                        @if (Auth::user()->hasRole('pustakawan'))
+                            <div class="mt-6">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Jumlah Daftar Buku</h3>
+                                <p class="text-xl font-bold text-gray-900 dark:text-gray-100">
+                                    {{ $bookCount }} Buku
+                                </p>
+                            </div>
+                        @endif
+                    @endauth
                 </div>
             </div>
         </div>

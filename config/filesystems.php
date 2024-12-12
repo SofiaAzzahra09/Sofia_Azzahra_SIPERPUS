@@ -73,5 +73,5 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
-
+    'default' => env('FILESYSTEM_DISK','public'),
 ];
